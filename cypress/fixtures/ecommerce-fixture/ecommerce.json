@@ -1,0 +1,30 @@
+{
+    "registro": {
+        "fullName": "Victor Vivas",
+        "email": "victor@hmail.com",
+        "password": "adminVic",
+        "confirmPassword": "adminVic"
+    },
+    "login": {
+        "fullName": "Admin User",
+        "email": "admin@example.com",
+        "password": "admin123"
+    },
+    "producto": {
+        "MensCottonJacket": "Mens Cotton Jacket",
+        "MensCasualSlimFit": "Mens Casual Slim Fit",
+        "Fjallraven": "Fjallraven",
+        "SolidGold": "Solid Gold"
+    },
+    "categoria": {
+        "electronics": "Electronics",
+        "jewelery": "Jewelery",
+        "mensClothing": "Men's clothing",
+        "womensClothing": "Women's clothing"
+    },
+    "orden": {
+        "priceLowToHigh": "Price: Low to High",
+        "priceHighToLow": "Price: High to Low",
+        "highestRated": "Highest Rated"
+    }
+}

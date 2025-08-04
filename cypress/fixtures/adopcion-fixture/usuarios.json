@@ -1,0 +1,22 @@
+{
+    "usuarioValido": {
+        "email": "user1@example.com",
+        "password": "password123",
+        "petIdLuna": 2
+    },
+    "usuarioInvalido": {
+        "email": "victor@gmail.com",
+        "password": "1234567"
+    },
+    "registro": {
+        "email": "victor@gmail.com",
+        "password": "123",
+        "userName": "Victor Javier Vivas",
+        "petIdBella":4
+    },
+    "registroInvalido":{
+        "email": "user1@example.com",
+        "password": "password123",
+        "userName": "Victor Javier Vivas"
+    }
+}

@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Cypress output
+cypress/videos/
+cypress/screenshots/
+
+# Cypress cache
+.cache/
+CypressCache/
+cypress/.cache/
+
+# Reportes y resultados (si usás mochawesome, junit, etc.)
+cypress/results/
+cypress/reports/
+cypress/logs/
+cypress/json/
+mochawesome-report/
+*.json.html
+*.xml
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Configuración del IDE
+.vscode/
+.idea/
+
+# Archivos de entorno opcionales
+.env
+.env.local
+.env.test
+.env.*.local
+
+# Coverage (si usás cobertura de código)
+coverage/
+
+# Artifacts de CI/CD
+artifacts/
