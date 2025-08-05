@@ -56,7 +56,7 @@ describe('Visitando el sitio: pruebas de login y registro', () => {
 
 
 
-    it.only('4) Validar registro con datos incorrectos', () => {
+    it('4) Validar registro con datos incorrectos', () => {
         const { userName, email, password } = registroInvalido
         AdopcionPage.registro(userName, email, password)
         cy.url().should('include', '/register');
