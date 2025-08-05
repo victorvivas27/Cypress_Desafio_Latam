@@ -2,11 +2,13 @@
     "usuarioValido": {
         "email": "user1@example.com",
         "password": "password123",
-        "petIdLuna": 2
+        "petIdLuna": 2,
+        "userName": "user1!"
     },
     "usuarioInvalido": {
         "email": "victor@gmail.com",
-        "password": "1234567"
+        "password": "1234567",
+        "mensajeError": "Credenciales inválidas. Inténtalo de nuevo."
     },
     "registro": {
         "email": "victor@gmail.com",
@@ -17,6 +19,7 @@
     "registroInvalido":{
         "email": "user1@example.com",
         "password": "password123",
-        "userName": "Victor Javier Vivas"
+        "userName": "Victor Javier Vivas",
+        "mensajeError": "El correo electrónico ya está registrado o hubo un error."
     }
 }
