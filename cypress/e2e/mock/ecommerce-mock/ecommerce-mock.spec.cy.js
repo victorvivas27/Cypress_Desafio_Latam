@@ -6,7 +6,7 @@ const rutaJson = 'ecommerce-mock/product-mock.json'
 const apiProducts = 'https://fakestoreapi.com/products'
 describe('Carga de producto', () => {
     before(() => {
-        cy.viewport(1920, 1080)
+        
     })
     it('Carga de fixtures', () => {
         cy.intercept('GET', apiProducts, {

@@ -3,7 +3,6 @@ const baseUrl = 'https://ecommerce-js-test.vercel.app/'
 const apiProducts = 'https://fakestoreapi.com/products'
 describe('Visiatando site Ecommerce', () => {
     before(() => {
-        cy.viewport(1920, 1080)
         cy.clearAllCookies
         cy.clearLocalStorage
     })
@@ -19,6 +18,7 @@ describe('Visiatando site Ecommerce', () => {
         cy.wait('@arrayVacio')
             .its('response.statusCode')
             .should('eq', 200);
+        cy.wait(2000);
         cy.get('.py-8 > .text-center > .text-xl')
             .should('have.text', 'Ningún producto disponible.');
     });
@@ -36,6 +36,7 @@ describe('Visiatando site Ecommerce', () => {
         cy.wait('@recursoNoValido')
             .its('response.statusCode')
             .should('eq', 404);
+        cy.wait(2000);
         cy.get('.text-center > .text-xl')
             .should('have.text', 'Product not found');
     });
@@ -52,6 +53,7 @@ describe('Visiatando site Ecommerce', () => {
         cy.wait('@errorServer')
             .its('response.statusCode')
             .should('eq', 500);
+        cy.wait(2000);
         cy.get('.text-lg')
             .should('have.text', 'Error: Error general de la API');
     });
@@ -68,6 +70,7 @@ describe('Visiatando site Ecommerce', () => {
         cy.wait('@servicioNoDisponible')
             .its('response.statusCode')
             .should('eq', 503);
+        cy.wait(2000);
         cy.get('.text-lg')
             .should('have.text', 'Error: Servicio no disponible');
     });
@@ -83,6 +86,7 @@ describe('Visiatando site Ecommerce', () => {
         cy.wait('@getProducts')
             .its('response.statusCode')
             .should('eq', 429);
+        cy.wait(2000);
         cy.get('.text-lg')
             .should('have.text', 'Error: Código de error: (429)');
     })

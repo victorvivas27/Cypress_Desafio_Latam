@@ -7,7 +7,6 @@ let orden = {}
 
 describe('Visiatando site Ecommerce', () => {
     before(() => {
-        cy.viewport(1920, 1080)
         cy.clearAllCookies
         cy.clearLocalStorage
         cy.fixture('ecommerce-fixture/ecommerce.json').then((data) => {
