@@ -1,6 +1,6 @@
 
 Cypress.Commands.add('login', (email, password) => {
-    cy.get('a[href="/login"]').click();
+    
     cy.get('#email').type(email);
     cy.get('#password').type(password);
     cy.get('button[type="submit"]').click()

@@ -29,7 +29,7 @@ describe('Visiatando site Ecommerce', () => {
 
     })
 
-    it.only('1)Validar registro,validar compra Mens Cotton Jacket', () => {
+    it('1)Validar registro,validar compra Mens Cotton Jacket', () => {
         const { fullName, email, password, confirmPassword } = registro;
         cy.registro(fullName, email, password, confirmPassword);
         cy.get('span.font-medium').should('have.text', `Hello, ${fullName}`)
@@ -42,6 +42,7 @@ describe('Visiatando site Ecommerce', () => {
     })
     it('2)Validar login,validar compra Mens Casual Slim Fit', () => {
         const { fullName, email, password } = login;
+        cy.get('a[href="/login"]').click();
         cy.login(email, password);
         cy.get('span.font-medium').should('have.text', `Hello, ${fullName}`)
         cy.get('button.flex:nth-child(4) > span:nth-child(2)').should('have.text', 'Logout')

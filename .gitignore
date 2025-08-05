@@ -15,6 +15,7 @@ cypress/results/
 cypress/reports/
 cypress/logs/
 cypress/json/
+cypress.env.json
 mochawesome-report/
 *.json.html
 *.xml
